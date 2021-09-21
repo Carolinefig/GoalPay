@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    tools:ignore="UnusedNavigation"
+    app:startDestination="@id/dash">
+    <fragment
+        android:id="@+id/dash"
+        android:name="goal.pay.Dash"
+        android:label="fragment_dash"
+        tools:layout="@layout/fragment_dash" />
+    <fragment
+        android:id="@+id/resgatar"
+        android:name="goal.pay.Resgatar"
+        android:label="fragment_resgatar"
+        tools:layout="@layout/fragment_resgatar" />
+    <fragment
+        android:id="@+id/pagar"
+        android:name="goal.pay.Pagar"
+        android:label="fragment_pagar"
+        tools:layout="@layout/fragment_pagar" />
+    <fragment
+        android:id="@+id/receber"
+        android:name="goal.pay.Receber"
+        android:label="fragment_receber"
+        tools:layout="@layout/fragment_receber" />
+    <fragment
+        android:id="@+id/mais"
+        android:name="goal.pay.Mais"
+        android:label="fragment_mais"
+        tools:layout="@layout/fragment_mais" />
+</selector>

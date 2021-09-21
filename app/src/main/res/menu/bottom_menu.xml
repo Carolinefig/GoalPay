@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/txtDash"
+        android:title="Dashboard"
+        android:icon="@drawable/ic_dashboard"/>
+
+    <item
+        android:id="@+id/txtResgatar"
+        android:title="Resgatar"
+        android:icon="@drawable/ic_cart"/>
+
+    <item
+        android:id="@+id/txtMais"
+        android:title="Mais"
+        android:icon="@drawable/ic_add"/>
+
+    <item
+        android:id="@+id/txtPagar"
+        android:title="Pagar"
+        android:icon="@drawable/ic_swap"/>
+
+    <item
+        android:id="@+id/txtReceber"
+        android:title="Receber"
+        android:icon="@drawable/ic_money"/>
+</menu>
