@@ -29,7 +29,7 @@
             android:id="@+id/Sair"
             android:layout_width="30dp"
             android:layout_height="40dp"
-            app:srcCompat="@drawable/sair__1_"
+            app:srcCompat="@drawable/sair"
             android:layout_marginLeft="250dp"
             android:background="@color/cardview_light_background"/>
 
@@ -63,9 +63,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginRight="30dp"
-                android:orientation="vertical">
+
+                android:layout_marginRight="30dp">
 
                 <TextView
                     android:id="@+id/txtMeuSaldo"
@@ -73,7 +72,25 @@
                     android:layout_height="wrap_content"
                     android:text="meu saldo"
                     android:textColor="#A6A6A6"
-                    android:textSize="13dp" />
+                    android:textSize="13dp"
+                    android:layout_marginTop="20dp"/>
+
+                <Button
+                    android:id="@+id/btnLocalizar"
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/botao_solicitar"
+                    android:onClick="GeoGo"
+                    android:shadowColor="#878787"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:text="localização"
+                    android:textColor="#FFFFFF"
+                    android:textFontWeight="8"
+                    android:textSize="14dp" />
 
             </LinearLayout>
 
@@ -85,14 +102,14 @@
                         android:layout_marginTop="50dp"
                         android:layout_marginLeft="25dp">
 
-                        <TextView
-                            android:id="@+id/txtValorTotal"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="R$ 498,49"
-                            android:textColor="#5E43C3"
-                            android:textSize="60dp" />
+                <TextView
+                    android:id="@+id/txtValorTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="R$ 478,49"
+                    android:textColor="#5E43C3"
+                    android:textSize="60dp" />
 
                         <ImageButton
                             android:id="@+id/OpenEye"
@@ -161,7 +178,6 @@
                                 android:layout_height="40dp"
                                 android:layout_marginTop="6dp"
                                 android:background="@drawable/botao_solicitar"
-
                                 android:shadowColor="#878787"
                                 android:shadowDx="0"
                                 android:shadowDy="0"
@@ -220,7 +236,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="270dp"
                         android:background="@color/cardview_light_background"
-                        app:srcCompat="@drawable/ic_add_circle_outline_black_24dp" />
+                        app:srcCompat="@drawable/ic_add_circle" />
 
 
                 </LinearLayout>
@@ -230,14 +246,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="340dp"
-                android:orientation="vertical">
+                android:layout_marginTop="360dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="30dp">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="320dp"
                     android:layout_height="85dp"
                     android:layout_gravity="center_vertical"
-                    android:layout_margin="30dp"
                     app:cardBackgroundColor="#FFFFFF"
                     app:cardCornerRadius="15dp"
                     app:cardElevation="15dp"
@@ -257,7 +273,7 @@
                             android:id="@+id/Perfil"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            app:srcCompat="@drawable/ic_account_circle_black_24dp" />
+                            app:srcCompat="@drawable/ic_account" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -292,8 +308,7 @@
                     android:layout_width="320dp"
                     android:layout_height="85dp"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="10dp"
                     app:cardBackgroundColor="#FFFFFF"
                     app:cardCornerRadius="15dp"
                     app:cardElevation="15dp"
@@ -313,7 +328,7 @@
                             android:id="@+id/Perfil2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            app:srcCompat="@drawable/ic_account_circle_black_24dp" />
+                            app:srcCompat="@drawable/ic_account" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -346,7 +361,7 @@
                     android:layout_width="320dp"
                     android:layout_height="85dp"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
                     app:cardBackgroundColor="#FFFFFF"
                     app:cardCornerRadius="15dp"
                     app:cardElevation="15dp"
@@ -366,7 +381,7 @@
                             android:id="@+id/Perfil3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            app:srcCompat="@drawable/ic_account_circle_black_24dp" />
+                            app:srcCompat="@drawable/ic_account" />
 
                         <LinearLayout
                             android:layout_width="match_parent"

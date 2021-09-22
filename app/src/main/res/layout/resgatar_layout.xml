@@ -31,7 +31,7 @@
             android:layout_height="40dp"
             android:layout_marginLeft="200dp"
             android:background="@color/cardview_light_background"
-            app:srcCompat="@drawable/sair__1_" />
+            app:srcCompat="@drawable/sair" />
     </LinearLayout>
 
     <androidx.gridlayout.widget.GridLayout
