@@ -20,10 +20,7 @@ public class Inicio extends AppCompatActivity {
     Button btnLocalizar;
     TextView txtValorTotal;
     ImageButton OpenEye;
-    TextView txtSolicite;
-    TextView txtObtenha;
-    Button btnSolicitar;
-    ImageView Cards;
+    ImageButton Solicitar;
     TextView txtHist;
     TextView txtData;
     ImageButton Add;
@@ -49,10 +46,7 @@ public class Inicio extends AppCompatActivity {
         btnLocalizar = (Button) findViewById(R.id.btnLocalizar);
         txtValorTotal = (TextView) findViewById(R.id.txtValorTotal);
         OpenEye = (ImageButton) findViewById(R.id.OpenEye);
-        txtSolicite = (TextView) findViewById(R.id.txtSolicite);
-        txtObtenha = (TextView) findViewById(R.id.txtObtenha);
-        btnSolicitar = (Button) findViewById(R.id.btnSolicitar);
-        Cards = (ImageView) findViewById(R.id.Cards);
+        Solicitar = (ImageButton) findViewById(R.id.Solicitar);
         txtHist = (TextView) findViewById(R.id.txtHist);
         txtData = (TextView) findViewById(R.id.txtData);
         Add = (ImageButton) findViewById(R.id.Add);
@@ -70,8 +64,6 @@ public class Inicio extends AppCompatActivity {
 
 
     public void GeoGo(View v){
-
-        Toast.makeText(Inicio.this, "Geo", Toast.LENGTH_LONG).show();
         Intent Go = new Intent(Inicio.this, Geolocalizacao.class);
         startActivity(Go);
     }

@@ -2,7 +2,8 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#F6FAFF">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -36,22 +37,21 @@
 
     <androidx.gridlayout.widget.GridLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="760dp"
         app:columnCount="2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:rowCount="3">
+        app:rowCount="3"
+        android:background="#F6FAFF">
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="0dp"
             android:layout_marginLeft="15dp"
-            android:layout_marginTop="70dp"
             android:layout_marginRight="15dp"
             android:layout_marginBottom="80dp"
             app:cardCornerRadius="15dp"
-            app:cardElevation="15dp"
             app:layout_column="0"
             app:layout_columnWeight="1"
             app:layout_gravity="fill"

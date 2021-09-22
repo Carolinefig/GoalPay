@@ -2,7 +2,8 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#F6FAFF">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -31,28 +32,27 @@
             android:layout_height="40dp"
             app:srcCompat="@drawable/sair"
             android:layout_marginLeft="250dp"
-            android:background="@color/cardview_light_background"/>
+            android:background="#F6FAFF"/>
 
     </LinearLayout>
 
     <androidx.gridlayout.widget.GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="760dp"
         app:columnCount="2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:rowCount="3">
+        app:rowCount="3"
+        android:background="#F6FAFF">
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="0dp"
             android:layout_marginLeft="15dp"
-            android:layout_marginTop="70dp"
             android:layout_marginRight="15dp"
             android:layout_marginBottom="80dp"
             app:cardCornerRadius="15dp"
-            app:cardElevation="15dp"
             app:layout_column="0"
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
@@ -126,78 +126,16 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:layout_marginTop="120dp"
-                android:layout_gravity="center_horizontal">
+                android:orientation="vertical">
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="320dp"
-                    android:layout_height="120dp"
-                    android:layout_margin="30dp"
-                    app:cardBackgroundColor="#DB5E43C3"
-                    android:outlineSpotShadowColor="@android:color/background_light"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="15dp"
-                    app:layout_columnWeight="1"
-                    app:layout_gravity="center_vertical"
-                    app:layout_row="0"
-                    app:layout_rowWeight="1">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginTop="18dp">
-
-                        <TextView
-                            android:id="@+id/txtSolicite"
-                            android:layout_width="300dp"
-                            android:layout_height="wrap_content"
-                            android:text="Solicite sua análise de crédito"
-                            android:textColor="#FFFFFF"
-                            android:textStyle="bold"
-                            android:textSize="16dp" />
-
-                        <TextView
-                            android:id="@+id/txtObtenha"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="e obtenha agora mesmo o cartão goalPay"
-                            android:textColor="#FFFFFF"
-                            android:textSize="14dp"/>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="horizontal">
-
-                            <Button
-                                android:id="@+id/btnSolicitar"
-                                android:layout_width="160dp"
-                                android:layout_height="40dp"
-                                android:layout_marginTop="6dp"
-                                android:background="@drawable/botao_solicitar"
-                                android:shadowColor="#878787"
-                                android:shadowDx="0"
-                                android:shadowDy="0"
-                                android:shadowRadius="5"
-                                android:text="solicitar agora!"
-                                android:textColor="#FFFFFF"
-                                android:textSize="14dp" />
-
-                            <ImageView
-                                android:id="@+id/Cards"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                app:srcCompat="@drawable/credit_card" />
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
+                <ImageButton
+                    android:id="@+id/Solicitar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/card"
+                    android:layout_marginTop="130dp"
+                    android:layout_marginLeft="12dp"
+                    android:background="#FFF"/>
 
             </LinearLayout>
 
@@ -206,40 +144,42 @@
                 android:layout_height="match_parent"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="290dp"
-                android:layout_marginRight="30dp">
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="340dp"
-                    android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txtHist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="histórico de transações"
+                    android:textColor="#4E4E4E"
+                    android:textSize="16dp" />
 
-                    <TextView
-                        android:id="@+id/txtHist"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="histórico de transações"
-                        android:textColor="#4E4E4E"
-                        android:textSize="16dp" />
-
-                    <TextView
-                        android:id="@+id/txtData"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="segunda-feira, 20 de setembro 2021"
-                        android:textColor="#5E4E4E4E"
-                        android:textSize="13dp" />
-
-                    <ImageButton
-                        android:id="@+id/Add"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="270dp"
-                        android:background="@color/cardview_light_background"
-                        app:srcCompat="@drawable/ic_add_circle" />
+                <TextView
+                    android:id="@+id/txtData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="segunda-feira, 20 de setembro 2021"
+                    android:textColor="#5E4E4E4E"
+                    android:textSize="13dp" />
 
 
-                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="340dp">
+
+                <ImageButton
+                    android:id="@+id/Add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="325dp"
+                    android:background="@color/cardview_light_background"
+                    app:srcCompat="@drawable/ic_add_circle"
+                    android:layout_marginTop="295dp" />
 
             </LinearLayout>
 
@@ -256,7 +196,7 @@
                     android:layout_gravity="center_vertical"
                     app:cardBackgroundColor="#FFFFFF"
                     app:cardCornerRadius="15dp"
-                    app:cardElevation="15dp"
+                    app:cardElevation="5dp"
                     app:layout_columnWeight="1"
                     app:layout_gravity="center_vertical"
                     app:layout_row="0"
@@ -311,7 +251,7 @@
                     android:layout_marginTop="10dp"
                     app:cardBackgroundColor="#FFFFFF"
                     app:cardCornerRadius="15dp"
-                    app:cardElevation="15dp"
+                    app:cardElevation="5dp"
                     app:layout_columnWeight="1"
                     app:layout_gravity="center_vertical"
                     app:layout_row="0"
@@ -364,7 +304,7 @@
                     android:layout_marginTop="10dp"
                     app:cardBackgroundColor="#FFFFFF"
                     app:cardCornerRadius="15dp"
-                    app:cardElevation="15dp"
+                    app:cardElevation="5dp"
                     app:layout_columnWeight="1"
                     app:layout_gravity="center_vertical"
                     app:layout_row="0"
