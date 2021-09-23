@@ -32,6 +32,7 @@
             android:layout_height="40dp"
             android:layout_marginLeft="200dp"
             android:background="#F6FAFF"
+            android:onClick="Sair"
             app:srcCompat="@drawable/sair" />
 
     </LinearLayout>

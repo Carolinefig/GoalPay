@@ -67,6 +67,11 @@ public class Inicio extends AppCompatActivity {
         Intent Go = new Intent(Inicio.this, Geolocalizacao.class);
         startActivity(Go);
     }
+
+    public void Sair(View a){
+        Intent out = new Intent(Inicio.this, MainActivity.class);
+        startActivity(out);
+    }
 }
 
 

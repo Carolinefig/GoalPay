@@ -30,9 +30,10 @@
             android:id="@+id/Sair"
             android:layout_width="30dp"
             android:layout_height="40dp"
-            app:srcCompat="@drawable/sair"
             android:layout_marginLeft="250dp"
-            android:background="#F6FAFF"/>
+            android:background="#F6FAFF"
+            android:onClick="Sair"
+            app:srcCompat="@drawable/sair" />
 
     </LinearLayout>
 

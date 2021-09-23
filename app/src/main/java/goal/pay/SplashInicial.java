@@ -1,41 +1,27 @@
 package goal.pay;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import androidx.appcompat.app.AppCompatActivity;
+public class SplashInicial extends Activity {
 
-public class SplashInicial extends AppCompatActivity {
+    private static int SPLASH_TIME_OUT = 3000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash_inicial);
-        mostrarLogin();
-    }
 
-    private void mostrarLogin() {
-        Intent intent = new Intent(SplashInicial.this, MainActivity.class);
-        startActivity(intent);
-        finish();
-    }
+        new Handler().postDelayed(new Runnable() {
 
-    public class SplashScreenActivity extends AppCompatActivity {
-
-        @Override
-        protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.splash_inicial);
-            Handler handle = new Handler();
-            mostrarLogin();
-
-            handle = new Handler();
-            handle.postDelayed(new Runnable() {
-                @Override public void run() {
-                    mostrarLogin();
-                }
-            }, 2000);
-        }
+            @Override
+            public void run() {
+                Intent i = new Intent(SplashInicial.this, MainActivity.class);
+                startActivity(i);
+                finish();
+            }
+        }, SPLASH_TIME_OUT);
     }
 }
