@@ -25,4 +25,5 @@
         android:id="@+id/txtReceber"
         android:title="Receber"
         android:icon="@drawable/ic_money"/>
+
 </menu>

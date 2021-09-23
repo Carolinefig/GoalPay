@@ -31,8 +31,9 @@
             android:layout_width="30dp"
             android:layout_height="40dp"
             android:layout_marginLeft="200dp"
-            android:background="@color/cardview_light_background"
+            android:background="#F6FAFF"
             app:srcCompat="@drawable/sair" />
+
     </LinearLayout>
 
     <androidx.gridlayout.widget.GridLayout
@@ -209,6 +210,7 @@
     </androidx.gridlayout.widget.GridLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/menuB"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#FFFFFF"

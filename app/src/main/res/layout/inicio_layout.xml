@@ -357,6 +357,7 @@
     </androidx.gridlayout.widget.GridLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/menu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#FFFFFF"

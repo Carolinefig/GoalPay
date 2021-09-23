@@ -84,7 +84,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
 
                 <TextView
                     android:id="@+id/txtComoReceber"
@@ -106,22 +107,17 @@
                     android:text="caroline.mata@gmail.com" />
 
                 <ImageView
-                    android:id="@+id/Estrelas"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/estrelas" />
-
-                <ImageView
                     android:id="@+id/Cartao"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/mulher_carteira"/>
+                    app:srcCompat="@drawable/mulher_carteira"
+                    android:layout_marginTop="50dp"/>
 
                 <Button
                     android:id="@+id/btnCompartilhar"
                     android:layout_width="320dp"
                     android:layout_height="40dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="55dp"
                     android:layout_gravity="center_horizontal"
                     android:background="@drawable/botao_realizar_pagamento"
                     android:shadowColor="#5E43C3"
@@ -135,6 +131,7 @@
     </androidx.gridlayout.widget.GridLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/menuB"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#FFFFFF"

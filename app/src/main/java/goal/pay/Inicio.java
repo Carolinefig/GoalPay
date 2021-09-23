@@ -7,10 +7,8 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.loader.app.LoaderManager;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Inicio extends AppCompatActivity {
 
@@ -26,11 +24,13 @@ public class Inicio extends AppCompatActivity {
     ImageButton Add;
     ImageView Perfil;
     TextView txtAcao;
+
     TextView txtDetalhes;
     ImageView Perfil2;
     TextView txtAcao2;
     TextView txtDetalhes2;
     ImageView Perfil3;
+    BottomNavigationView menu;
     TextView txtAcao3;
     TextView txtDetalhes3;
 
@@ -39,7 +39,7 @@ public class Inicio extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.inicio_layout);
 
-
+        menu = (BottomNavigationView) findViewById(R.id.menu);
         Sair = (ImageButton) findViewById(R.id.Sair);
         txtOla = (TextView) findViewById(R.id.txtOla);
         txtMeuSaldo = (TextView) findViewById(R.id.txtMeuSaldo);
@@ -60,8 +60,8 @@ public class Inicio extends AppCompatActivity {
         txtAcao3 = (TextView) findViewById(R.id.txtAcao3);
         txtDetalhes3 = (TextView) findViewById(R.id.txtDetalhes3);
 
+        MenuConfig.Change(Inicio.this, menu);
     }
-
 
     public void GeoGo(View v){
         Intent Go = new Intent(Inicio.this, Geolocalizacao.class);
